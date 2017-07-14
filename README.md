@@ -5,7 +5,7 @@ vue2 + vuex + axios 做的音乐播放器 webApp
 
 线上地址：http://vuemc.d.thefour.xin
 
-请把浏览器调成手机模式，或者直接用手机浏览器访问
+**请把浏览器调成手机模式，或者直接用手机浏览器访问**
 
 ## Build Setup
 
