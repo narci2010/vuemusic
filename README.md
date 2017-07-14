@@ -1,6 +1,6 @@
-# dymusic
-
-> 音乐播放器
+# vuemusic
+vue2 + vuex + axios 做的音乐播放器
+线上地址：http://vuemc.d.thefour.xin/
 
 ## Build Setup
 
