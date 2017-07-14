@@ -1,0 +1,43 @@
+@mixin bg-image($url) {
+  background-image: url($url + "@2x.png");
+  @media screen and (-webkit-min-device-pixel-ratio: 3) , (min-device-pixel-ratio: 3) {
+    background-image: url($url + "@3x.png");
+  }
+}
+
+@mixin bg-image-jpg($url) {
+  background-image: url($url + "@2x.jpg");
+  @media screen and (-webkit-min-device-pixel-ratio: 3) , (min-device-pixel-ratio: 3) {
+    background-image: url($url + "@3x.jpg");
+  }
+}
+
+@mixin no-wrap() {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// 扩展小图标点击区域
+@mixin extend-click() {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+  }
+}
+
+// 1px边框
+@mixin border-1px($top, $right, $bottom, $left) {
+  border-width: $top $right $bottom $left;
+  @media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    border-width: $top * 0.666 $right * 0.666 $bottom * 0.666 $left * 0.666;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2){
+    border-width: $top * 0.5 $right * 0.5 $bottom * 0.5 $left * 0.5;
+  }
+}
